@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family: "Poppins";
+}
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        width:90%;
+    }
+}
+
+/* Buttons */
+.btn {
+    padding: 15px 30px; 
+    background: white;
+    border: 1.5px solid grey;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: whitesmoke;
+}
+
+/* Hero Titles */
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: black;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.pre-title::before {
+    content:"";
+    width: 30px;
+    height: 1px;
+    background: gray;
+    position: absolute;
+    display: block;
+    left: 0;
+}
+
+/* Services Title */
+.services h4 {
+    margin-bottom: 10px;
+}
+
+.services p {
+    text-align: center;
+}
+
+.section-title {
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+/* Layout */
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Navigation Bar */
+.nav {
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    justify-content: space-between;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.logo a {
+    color: gray;
+}
+
+/* Burger */
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 7px;
+    transition: all.3s;
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 35px;
+    right: 35px;
+}
+
+/* Hero Section */
+#hero {
+    padding-left: 100px; 
+    padding-right: 50px;
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-left {
+    padding-right: 50px;
+}
+
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right img {
+    height: 40%;
+    width: 40%;
+    border-radius: 20%;
+}
+
+.hero-name {
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hero-name span {
+    color: gray;
+}
+
+/* Service Section */
+#services {
+    background-color: whitesmoke;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+}
+
+.services .pre-title {
+    margin: auto;
+}
+
+.services-title {
+    text-align: center;
+}
+
+.service-icon svg {
+    width: 20%;
+}
+
+.service {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* Portfolio Section */
+#portfolios {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 80px;
+}
+
+.portfolio {
+    padding-top: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid whitesmoke;
+}
+
+.portfolio-cover {
+    height: 250px;
+}
+
+.portfolio-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.portfolio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.portfolio h4 {
+    font-weight: 500 solid;
+    font-size: 20px;
+}
+
+.portfolio-title svg:hover {
+    fill: gray;
+}
+
+.portfolio-title svg {
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.portfolio-tags {
+    display: flex;
+    gap: 15px;
+}
+
+.portfolio-tags div {
+    font-size: 15px;
+    border: 2px solid whitesmoke;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: gray;
+    border-radius: 20px;
+}
+
+/* Experiences */
+#experiences {
+    background-color: white;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+}
+
+.work-place {
+    font-size: 18px;
+}
+
+.work-detail {
+    line-height: 25px;
+}
+
+.work-info, .work-detail p {
+    text-align: justify;
+}
+
+/* Skills & Certificate */
+#skills {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+    background: whitesmoke;
+}
+
+.education {
+    display: flex;
+    gap: 35px;
+}
+
+.education .line {
+    padding: 25px;
+}
+
+.education .line div {
+    width: 2px;
+    height: 100%;
+    background: gainsboro;
+    position: relative;
+}
+
+.education-years {
+    margin-bottom: 35px;
+}
+
+.certificate {
+    margin-top: 19px;
+    line-height: 25px;
+}
+
+.certificate p {
+    font-weight: lighter;
+}
+
+.certificate a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Dot on Line */
+.education .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: lightgray;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.skills-right ul {
+    line-height: 25px;
+}
+
+/* Software & Framework Section */
+#software-framework {
+    background-color: whitesmoke;
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+}
+
+.icon {
+    align-items: center;
+}
+
+.icon div {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.software-framework-icon {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+
+.software-framework-icon img {
+    width: 125px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Contact Section */
+#contact {
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 60px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 120px;
+}
+
+.contact-form div {
+    margin-bottom: 20px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 96%;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    background: whitesmoke;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: grey;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border: 1px solid grey;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background: gainsboro;
+}
+
+.contact-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.contact-item-icon {
+    background: grey;
+    width: 53px;
+    height: 53px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item-icon svg {
+    fill: white;
+}
+
+.contact-item-detail h4 {
+    margin-bottom: 10px;
+}
+
+/* Footer Section */
+footer {
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 40px;
+    background: whitesmoke;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 15px;
+}
+
+.footer-icons a {
+    margin: 0 7px;
+}
+
+.footer-icons a:hover svg {
+    fill: gray;
+}
+
+
+    
